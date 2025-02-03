@@ -6,3 +6,4 @@ python-docx
 fpdf
 flask
 flask-cors
+gunicorn 
