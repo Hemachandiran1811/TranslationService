@@ -68,7 +68,7 @@ async def upload_summarize_translate(language: str = Form(...),
         limited_text = " ".join(words[:400])
 
         # Prepare the prompt for summarization
-        prompt = f"summarize the following text up to 400 words in {language}: {limited_text}"
+        prompt = f"summarize the following words in {language}: {limited_text}"
 
         # Start a chat session with the Gemini LLM
         chat_session = model.start_chat(history=[
